@@ -1,0 +1,45 @@
+.scrollBtn {
+	position: absolute;
+	bottom: 2em;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%, 200%);
+	z-index: 199;
+	transition: 1s transform 3s, 0.5s opacity 3.4s;
+}
+.loaded {
+	.scrollBtn {
+		opacity: 1;
+		transform: translate(-50%, 0%);
+		animation-name: fly;
+	    animation-duration: 3s;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
+	}
+}
+@keyframes fly {
+	0% {
+		transform: translate(-50%, 0%);
+	}
+	50% {
+		transform: translate(-50%, -20%);
+	}
+	100% {
+		transform: translate(-50%, 0%);
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.scrollBtn {
+		border: none;
+	}
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+	.scrollBtn {
+		bottom: 0;
+	}
+}
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+	.scrollBtn {
+		bottom: 0;
+	}
+}

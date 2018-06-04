@@ -1,0 +1,31 @@
+.textWrap_areasHead {
+  width: calc((100% / 7) * 3);
+  height: 14em;
+  margin-right: 0; }
+
+.head_areas {
+  line-height: 1em; }
+
+.areasList__item {
+  padding-right: 20%; }
+  .areasList__item:nth-child(1) {
+    padding-right: 20%; }
+
+@media only screen and (max-width: 1330px) {
+  .areasList__item {
+    padding-right: 10%; }
+    .areasList__item:nth-child(1) {
+      padding-right: 10%; }
+    .areasList__item:nth-child(3) {
+      padding-right: 5%; } }
+
+@media only screen and (max-width: 1250px) {
+  .areasList__item {
+    padding-right: 5%; }
+    .areasList__item:nth-child(1), .areasList__item:nth-child(3) {
+      padding-right: 5%; } }
+
+@media only screen and (max-width: 1000px) {
+  .textWrap_areasHead {
+    width: 100%;
+    height: auto; } }

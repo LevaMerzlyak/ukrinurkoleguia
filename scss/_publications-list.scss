@@ -1,0 +1,123 @@
+.publications {
+	position: relative;
+	background-color: $wht;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	opacity: 0;
+	transition: all 1s ease-in-out 2.5s;
+	.grid {
+		top: 0;
+		height: 100%;
+	}
+	.grid__line:before {
+		background-color: $gridGrey;
+		height: 100%;
+	}
+	.loaded {
+		.grid__line {
+			&:before {
+				height: 100%;
+			}
+		}
+	}
+}
+.loaded {
+	.publications {
+		opacity: 1;
+	}
+}
+.publicationsTxt {
+	margin-left: 13.6%;
+	margin-right: 13.6%;
+	position: relative;
+	z-index: 150;
+}
+.publication {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+.publication__head {
+	font-family: 'Bodoni', serif;
+	font-size: 2.1em;
+	font-weight: 700;
+	color: $aboutTxt;
+	letter-spacing: 0em;
+	line-height: 1em;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 0.35em;
+		height: 0.35em;
+		border: 0.2em solid $blu;
+		position: absolute;
+		top: 50%;
+		left: calc((-100% / 10) - 0.35em);
+		transform: translateY(-50%);
+	}
+}
+.publication__txt {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1.43em;
+	font-weight: 400;
+	color: $aboutTxt;
+	letter-spacing: 0em;
+	line-height: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.publication__detailsBtn {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: $blu;
+	letter-spacing: 0em;
+	line-height: 3em;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 4em;
+	padding-right: 4em;
+	border: 1px solid $blu;
+}
+.publication__head,
+.publication__txt,
+.publication__detailsBtn {
+	margin-left: calc(100% / 7);
+	margin-right: calc(100% / 7);
+}
+@media only screen and (max-width: 900px) {
+	.publicationsTxt {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.publication__head {
+		margin-left: 2em;
+		margin-right: 0;
+		&:before {
+			left: calc(-1em - 0.35em);
+		}
+	}
+	.publication__txt,
+	.publication__detailsBtn {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+	.publications {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.publicationsTxt {
+		.textWrap_txtSup {
+			margin-top: 2em;
+			margin-bottom: 2em;
+		}
+	}
+}
+@media only screen and (max-width: 550px) {
+	.publication__head {
+		font-size: 1.7em;
+	}
+}

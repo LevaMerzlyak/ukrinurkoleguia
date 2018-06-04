@@ -1,0 +1,135 @@
+.videoAbout__wrap {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	visibility: hidden;
+	transition: visibility 0s 2s;
+	z-index: 500;
+}
+.videoAbout {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-color: $blu;
+	transform: translateX(100%);
+	transition: transform 1s ease-in-out 1.5s;
+}
+.video__wrap {
+	width: 60%;
+	height: 0;
+	padding-bottom: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgba(255,255,255,0.2);
+	transition: all 1s ease-in-out 0.5s;
+	overflow: hidden;
+}
+.video-js {
+	position: absolute!important;
+}
+.video {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: all 0.5s ease-in-out 0s;	
+}
+.btn_videoClose {
+	position: absolute;
+	right: 0;
+	margin-right: 13.6%;
+	margin-top: 1em;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out 0s;
+	.btn__line {
+		display: block;
+		width: 60%;
+		height: 1px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		background-color: transparent;
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			background-color: $wht;
+			transform: rotate(45deg);
+			top: 50%;
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+.videoAbout_open {
+	visibility: visible;
+	transition: visibility 0s 0s;
+	.videoAbout {
+		transform: translateX(0%);
+		transition: transform 1s ease-in-out 0s;		
+	}
+	.video__wrap {
+		padding-bottom: calc(60% * 9 / 16);
+		transition: all 1s ease-in-out 1s;
+	}
+	.video {
+		opacity: 1;
+		transition: all 0.5s ease-in-out 2s;
+	}
+	.video__wrap_resize {
+		transition: all 0.2s ease-in-out 0s;
+		.video {
+			transition: all 0.2s ease-in-out 0s;			
+		}
+	}
+	.btn_videoClose {
+		opacity: 1;
+		transition: opacity 0.5s ease-in-out 1s;
+	}
+}
+@media only screen and (max-width: 1250px) {
+	.video__wrap {
+		width: 90%;
+	}
+	.videoAbout_open {
+		.video__wrap {
+			padding-bottom: calc(90% * 9 / 16);
+		}
+	}
+	.btn_videoClose {
+		margin-right: 1em;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.video__wrap {
+		width: 75%;
+	}
+	.videoAbout_open {
+		.video__wrap {
+			padding-bottom: calc(75% * 9 / 16);
+		}
+	}
+}
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
+	.video__wrap {
+		width: 95%;
+	}
+	.videoAbout_open {
+		.video__wrap {
+			padding-bottom: calc(95% * 9 / 16);
+		}
+	}
+}

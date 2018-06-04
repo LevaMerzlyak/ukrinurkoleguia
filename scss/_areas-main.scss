@@ -1,0 +1,244 @@
+.header{
+	position: absolute;
+}
+.grid {
+	position: absolute;
+}
+.bg__part_main {
+	transition: width 1.5s ease-in-out 0s, transform 1.5s ease-in-out 0s;
+	.bg__inner {
+		width: 44.8vw;
+	}
+	@for $i from 1 through 4 {
+		&:nth-child(#{$i}) {
+    		right: 13.6% + ((3 - $i) * 10.4%);
+    		.bg__inner {
+    			left: 0% - (($i - 1) * 100%);
+    		}
+    	}
+  	}
+  	&:nth-child(1) {
+  		.bg__inner {
+  			left: 0;
+  		}
+  	}
+  	&:nth-child(4) {
+  		right: 0;
+  		.bg__inner {
+  			left: -230%;
+  		}
+  	}
+}
+.loaded {
+	.bg__part{
+		width: 10.4%;
+	  	&:nth-child(4) {
+	  		width: 13.6%;
+		}
+	}
+}
+.mainTxt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: calc(100% - 9em);
+	margin-top: 9em;
+	margin-left: 13.6%;
+	margin-right: 55.2%;
+}
+.textWrap_head {
+	margin-bottom: 4em;
+}
+.mainMenu__item {
+	box-sizing: border-box;
+	position: relative;
+	&:not(:last-child) {
+		margin-bottom: 5%;
+	}
+	&:before {
+		content: "";
+		display: block;
+		width: 0.5em;
+		height: 0.5em;
+		border-radius: 50%;
+		border: 1px solid transparent;
+		background-color: transparent;
+		position: absolute;
+		left: -1px;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		transition: all 1.5s ease-in-out 2s;
+	}
+}
+.mainMenu__link {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	color: $wht;
+	letter-spacing: 0.01em;
+	line-height: 1.3em;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;	
+	padding-left: 2em;
+}
+.serviceList {
+	margin-left: calc(100% / 3);
+	height: 0;
+	transition: all 1.5s ease-in-out 2s;
+}
+.serviceList__item {
+	position: relative;
+	opacity: 0;
+	transition: all 1.5s ease-in-out 2.5s;
+	&:not(:last-child) {
+		margin-bottom: 5%;
+	}
+	&:before {
+		content: "";
+		display: block;
+		width: 0.1em;
+		height: 0.1em;
+		border-radius: 50%;
+		border: 1px solid $wht;
+		background-color: $wht;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		transition: all 1.5s ease-in-out 2s;
+	}
+}
+.serviceList__link {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	color: $wht;
+	letter-spacing: 0.01em;
+	line-height: 1em;
+	text-decoration: none;
+	display: block;
+	padding-left: 2em;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.serviceList__link_active {
+	text-decoration: underline;
+}
+.mainMenu__item_active {
+	&:not(:last-child) {
+		margin-bottom: 7.5%;
+	}
+	&:last-child {
+		margin-top: 7.5%;
+	}
+	&:before {
+		content: "";
+		display: block;
+		width: 0.2em;
+		height: 100%;
+		border-radius: 0%;
+		background-color: transparent;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translate(0%,0%);
+		transition: all 1.5s ease-in-out 2s;
+	}
+	.mainMenu__link {
+		font-family: 'Bodoni', serif;
+		font-size: 2.1em;
+		font-weight: 700;
+		line-height: 1em;
+		margin-bottom: 1em;
+		padding-left: 1em;
+	}
+}
+.loaded {
+	.mainMenu__item {
+		&:before {
+			border: 1px solid $wht;
+		}
+	}
+	.mainMenu__item_active {
+		&:before {
+			background-color: $wht;
+		}
+		.serviceList {
+			height: auto;
+		}
+		.serviceList__item {
+			opacity: 1;
+		}
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.bg__part_main {
+		.bg__inner {
+			width: 100vw;
+		}
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}) {
+	    		right: 10% + ((3 - $i) * 40%);
+	    		.bg__inner {
+	    			left: -25% - (($i - 2) * 100%);
+	    		}
+	    	}
+	    }
+	    &:nth-child(1) {
+	  		.bg__inner {
+	  			left: 0;
+	  		}
+	  	}
+	    &:nth-child(4) {
+	  		right: 0;
+	  		.bg__inner {
+	  			left: -900%;
+	  		}
+	  	}
+	}
+	.loaded {
+		.bg__part{
+			width: 40%;
+		  	&:nth-child(1),
+		  	&:nth-child(4) {
+		  		width: 10%;
+			}
+		}
+	}
+	.serviceList {
+		margin-left: 2em;
+	}
+	.mainTxt {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+	.mainTxt {
+		height: calc(100% - (44px + 2em));
+		margin-top: calc(44px + 2em);
+	}
+	.textWrap_head {
+		margin-bottom: 2em;
+	}
+	.mainMenu__item {
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
+	}
+}
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+	.mainTxt {
+		height: calc(100% - (44px + 2em));
+		margin-top: calc(44px + 2em);
+	}
+}
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+	.mainMenu__item_active {
+		.mainMenu__link {
+			font-size: 1em;
+		}
+	}
+}

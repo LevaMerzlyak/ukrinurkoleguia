@@ -1,0 +1,59 @@
+.grid {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.grid_mobMenu {
+	z-index: 260;
+}
+.grid__line {
+	position: relative;
+	width: 10.4%;
+	&:first-child {
+		width: 13.6%;
+	}
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 1px;
+		height: 0;
+		right: 0;
+		background-color: rgba(255,255,255,0.2);
+		transition: 1.5s height ease-in-out;
+		transition-delay: 0.2s;
+	}
+	&:nth-child(2n):before {
+		transition-delay: 0.3s;
+	}
+	&:nth-child(3n):before {
+		transition-delay: 0s;
+	}
+	&:nth-child(4n):before {
+		transition-delay: 0.1s;
+	}
+	&:nth-child(1):before {
+		transition-delay: 0.1s;
+	}
+}
+.loaded {
+	.grid__line {
+		&:before {
+			height: 100vh;
+		}
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.grid__line {
+		width: 40%;
+		@for $i from 4 through 8 {
+			&:nth-child(#{$i}) {
+				display: none;
+			}
+		}
+		&:first-child {
+			width: 10%;
+		}
+	}
+}

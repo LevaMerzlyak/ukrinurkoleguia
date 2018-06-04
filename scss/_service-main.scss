@@ -1,0 +1,23 @@
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+	.loaded {
+		.grid__line {
+			&:before {
+				height: 100vw;
+				min-height: 700px;
+			}
+		}
+	}
+	.main {
+		height: auto;
+	}
+	.mainTxt {
+		justify-content: flex-start;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}	
+	.mainMenu__item {
+		&:not(:last-child) {
+			margin-bottom: 5%;
+		}
+	}
+}

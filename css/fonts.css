@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-Bold.eot');
+	src: local('☺'), url('fonts/ProximaNova-Bold.woff') format('woff'), url('fonts/ProximaNova-Bold.ttf') format('truetype'), url('fonts/ProximaNova-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-Regular.eot');
+	src: local('☺'), url('fonts/ProximaNova-Regular.woff') format('woff'), url('fonts/ProximaNova-Regular.ttf') format('truetype'), url('fonts/ProximaNova-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-Light.eot');
+	src: local('☺'), url('fonts/ProximaNova-Light.woff') format('woff'), url('fonts/ProximaNova-Light.ttf') format('truetype'), url('fonts/ProximaNova-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamPro';
+	src: url('fonts/GothamPro.eot');
+	src: local('☺'), url('fonts/GothamPro.woff') format('woff'), url('fonts/GothamPro.ttf') format('truetype'), url('fonts/GothamPro.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bodoni';
+	src: url('fonts/Bodoni-Cyrillic_7680.eot');
+	src: local('☺'), url('fonts/Bodoni-Cyrillic_7680.woff') format('woff'), url('fonts/Bodoni-Cyrillic_7680.ttf') format('truetype'), url('fonts/Bodoni-Cyrillic_7680.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bodoni';
+	src: url('fonts/Bodoni Bold Cyrillic.eot');
+	src: local('☺'), url('fonts/Bodoni Bold Cyrillic.woff') format('woff'), url('fonts/Bodoni Bold Cyrillic.ttf') format('truetype'), url('fonts/Bodoni Bold Cyrillic.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}

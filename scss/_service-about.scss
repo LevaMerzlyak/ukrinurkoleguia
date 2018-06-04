@@ -1,0 +1,121 @@
+.service {
+	position: relative;
+	background-color: $wht;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	opacity: 0;
+	transition: all 1s ease-in-out 2.5s;
+	.grid {
+		top: 0;
+		height: 100%;
+	}
+	.grid__line:before {
+		background-color: rgba(179,179,179,0.3);
+		height: 100%;
+	}
+	.loaded {
+		.grid__line {
+			&:before {
+				height: 100%;
+			}
+		}
+	}
+}
+.loaded {
+	.service {
+		opacity: 1;
+	}
+}
+.serviceTxt {
+	margin-left: 13.6%;
+	margin-right: 13.6%;
+	position: relative;
+	z-index: 150;
+	.textWrap {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	.textWrap_txtSup {
+		margin-top: 3em;
+		margin-bottom: 3em;
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+	}
+}
+.service__txt {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1.43em;
+	font-weight: 400;
+	color: $aboutTxt;
+	letter-spacing: 0em;
+	line-height: 1.5em;
+	margin-right: calc(100% / 7);
+	margin-left: calc(100% / 7);
+	span {
+		font-weight: 700;
+	}
+}
+.service__txt_sup {
+	font-family: 'Bodoni', serif;
+	font-size: 2.9em;
+	font-weight: 700;
+	color: $aboutTxt;
+	line-height: 0.9em;
+	margin-left: 0;
+}
+.serviceTxt__list {
+	margin-right: calc(100% / 7);
+	margin-left: calc(100% / 7);
+}
+.serviceTxt__item {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1.43em;
+	font-weight: 400;
+	color: $aboutTxt;
+	letter-spacing: 0em;
+	line-height: 1.5em;
+	padding-left: 2em;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background-color: $blu;
+		position: absolute;
+		left: 0;
+		top: calc(0.75em - 2px);
+	}
+	&:not(:last-child) {
+		margin-bottom: 1em;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.serviceTxt {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.service__txt,
+	.serviceTxt__list {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+	.service {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.serviceTxt {
+		.textWrap_txtSup {
+			margin-top: 2em;
+			margin-bottom: 2em;
+		}
+	}
+}
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+	.service__txt_sup {
+		font-size: 2.5em;
+	}
+}

@@ -1,0 +1,83 @@
+@import 'variables';
+body {
+	font-size: 14px;
+	overflow-y: hidden;
+}
+.pages {
+	width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+	visibility: hidden;
+}
+.page {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+}
+.loaded {
+	.pages {
+		visibility: visible;
+	}
+}
+.textWrap {
+	position: relative;
+	overflow: hidden;
+}
+.head {
+	font-family: 'Bodoni', serif;
+	font-size: 5.7em;
+	font-weight: 700;
+	letter-spacing: 0em;
+	line-height: 0.8em;
+	color: $wht;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+.subHead {
+	font-family: 'Bodoni', serif;
+	font-size: 3.1em;
+	font-weight: 700;
+	color: $wht;
+	letter-spacing: 0em;
+	text-transform: uppercase;
+	span {
+		font-size: 0.5em;
+	}
+}
+.btn {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	border: 1px solid $border;
+	border-radius: 50%;
+	.icon {
+		display: block;
+		width: 30%;
+		height: 30%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+@import 'icons';
+@import 'grid';
+@import 'header';
+@import 'scroll-btn';
+@import 'page-pag';
+@import 'bg-part';
+@import 'main-slider';
+@import 'main-areas';
+@import 'main-about';
+@import 'main-contacts';
+@import 'mobile-menu';
+@import 'main-mobile';
+@import 'video';
+
+@media only screen and (max-width: 1500px) {
+	body {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,125 @@
+.bg__img {
+	display: none;
+}
+.bg__part {
+	position: absolute;
+	height: 100%;
+	width: 0;
+	overflow: hidden;
+	transition: width 1.5s ease-in-out 0s, transform 1.5s ease-in-out 0s;
+	&:after,
+	.bg__inner {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100vw;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&:after {
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	@for $i from 1 through 9 {
+		&:nth-child(#{$i}) {
+    		right: 13.6% + ((8 - $i) * 10.399%);
+    		.bg__inner {
+    			left: -30% - (($i - 1) * 100%);
+    		}
+    	}
+  	}
+  	&:nth-child(1) {
+  		.bg__inner {
+  			left: 0;
+  		}
+  	}
+  	&:nth-child(9) {
+  		right: 0;
+  		.bg__inner {
+  			left: -634%;
+  		}
+  	}
+}
+
+.page_current {
+	z-index: 2;
+	.bg__part {
+		transform: translateY(0%);
+		@for $i from 1 through 9 {
+			&:nth-child(#{$i}) {
+	    		transition: width 1.5s ease-in-out 0s, transform 1s ease-in-out 1s + ($i * 0.2s);
+	    	}
+	  	}
+	}
+}
+.page_fromBottom {
+	z-index: 1;
+	.bg__part {
+		transform: translateY(100%);
+		@for $i from 1 through 9 {
+			&:nth-child(#{$i}) {
+	    		transition: width 1.5s ease-in-out 0s, transform 1s ease-in-out ($i * 0.2s);
+	    	}
+	  	}
+	}
+}
+.page_toTop {
+	z-index: 1;
+	.bg__part {
+		transform: translateY(-100%);
+		@for $i from 1 through 9 {
+			&:nth-child(#{$i}) {
+	    		transition: width 1.5s ease-in-out 0s, transform 1s ease-in-out ($i * 0.2s);
+	    	}
+	  	}
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.bg__part {
+		@for $i from 5 through 9 {
+			&:nth-child(#{$i}) {
+				display: none;
+			}
+		}
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}) {
+	    		right: 10% + ((3 - $i) * 40%);
+	    		.bg__inner {
+	    			left: -25% - (($i - 2) * 100%);
+	    		}
+	    	}
+	    }
+	    &:nth-child(1) {
+	  		.bg__inner {
+	  			left: 0;
+	  		}
+	  	}
+	    &:nth-child(4) {
+	  		right: 0;
+	  		.bg__inner {
+	  			left: -900%;
+	  		}
+	  	}
+	}
+	.page_current {
+		.bg__part {
+			@for $i from 1 through 4 {
+				&:nth-child(#{$i}) {
+		    		transition: width 1.5s ease-in-out 0s, transform 1s ease-in-out 0.5s + ($i * 0.2s);
+		    	}
+		  	}
+		}
+	}
+	.page_fromBottom,
+	.page_toTop {
+		.bg__part {
+			@for $i from 1 through 4 {
+				&:nth-child(#{$i}) {
+		    		transition: width 1.5s ease-in-out 0s, transform 1s ease-in-out ($i * 0.2s);
+		    	}
+		  	}
+		}
+	}
+}

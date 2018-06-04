@@ -1,0 +1,281 @@
+.loaded {
+	height: auto;
+	overflow: visible;
+}
+.contacts {
+	width: calc(100% * 3 / 7 );
+	margin-right: calc(100% / 7);
+}
+.feedback {
+	width: calc(100% * 2 / 7);
+}
+.textWrap_input {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: -1px;
+}
+.head_contacts,
+.head_feedback,
+.head_office {
+	position: relative;
+	padding-left: 0.7em;
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0.15em;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: $wht;
+	}
+}
+.contacts__txt {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $wht;
+	letter-spacing: 0.01em;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+.contacts_phone2 {
+	&:before {
+		content: ", ";
+	}
+}
+.input__style {
+	border: 1px solid rgba(255,255,255,0);
+	background-color: transparent;	
+	transition: all 0.5s ease-in-out;
+}
+.loaded {
+	.input__style {
+		border: 1px solid rgba(255,255,255,0.2);
+		background-color: $darkBlu;		
+	}
+}
+.input__style_select {
+	margin-left: -1px;
+	width: calc((100% * 2 / 3) - 1px);
+}
+.contacts__offices {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $wht;
+	letter-spacing: 0.01em;
+	display: inline-block;
+	width: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNDQ4IDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ4IDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjA3LDM4MS41TDEyLjcsMTg3LjFjLTkuNC05LjQtOS40LTI0LjYsMC0zMy45bDIyLjctMjIuN2M5LjQtOS40LDI0LjUtOS40LDMzLjksMGwxNTQuNywxNTRsMTU0LjctMTU0CgljOS40LTkuMywyNC41LTkuMywzMy45LDBsMjIuNywyMi43YzkuNCw5LjQsOS40LDI0LjYsMCwzMy45TDI0MSwzODEuNUMyMzEuNiwzOTAuOCwyMTYuNCwzOTAuOCwyMDcsMzgxLjVMMjA3LDM4MS41eiIvPgo8L3N2Zz4=);
+	background-size: 5%;
+	background-position-x: 95%;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+#officesList {
+	display: none;
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $wht;
+	letter-spacing: 0.01em;
+	width: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+	border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    &:focus {
+    	outline: none;
+    }
+}
+.contactsOptions__wrap {
+	visibility: hidden;
+	position: relative;
+	margin-left: -1px;
+	width: calc((100% * 2 / 3) - 1px);
+	transition: visibility 0s 1s;
+}
+.contactsOptions__scroll {
+	position: absolute;
+	width: 100%;
+	top: -2em;
+	background-color: $darkBlu;
+	border: 1px solid rgba(255,255,255,0.2);
+	z-index: 200;
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s ease-in-out 0.5s;
+}
+.contactsOptions {
+	height: 100%;
+	width: 100%;
+	padding-right: 20px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.contactsOptions__item {
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $wht;
+	letter-spacing: 0.01em;
+	width: 100%;
+	padding: 1em;
+	cursor: pointer;
+	opacity: 0;
+	&:hover {
+		background-color: $formBlu;
+	}
+	@for $i from 1 through 18 {
+		&:nth-child(#{$i}) {
+			transition: background-color 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+		}
+	}
+}
+.contactsOptions__wrap_open {
+	visibility: visible;
+	transition: visibility 0s 0s;
+	.contactsOptions__scroll {
+		height: 25em;
+		transition: height 0.5s ease-in-out 0s;
+	}
+	.contactsOptions__item {
+		opacity: 1;
+		@for $i from 1 through 18 {
+			&:nth-child(#{$i}) {
+				transition: background-color 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0.5s + ($i * 0.1s);
+			}
+		}
+	}
+}
+.input__style_textarea {
+	overflow: hidden;
+}
+.feedback__form {
+	input,
+	textarea {
+		font-family: 'ProximaNova', sans-serif;
+		font-size: 1.3em;
+		font-weight: 400;
+		color: $wht;
+		letter-spacing: 0.01em;
+		display: inline-block;
+		width: calc(100% - 2em);
+		padding: 1em;
+		border: none;
+		box-shadow: none;
+	    background: transparent;
+		&::placeholder {
+			color: $formBlu;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	textarea {
+		resize: none;
+		padding-right: calc(20px + 1em);
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	input[type="submit"] {
+		width: 100%;
+		cursor: pointer;
+		&:hover {
+			background-color: $formBlu;
+		}
+	}
+}
+.textWrap_submit {
+	width: 50%;
+	margin-left: calc(50% - 1px);
+}
+@media only screen and (max-width: 1250px) {
+	.feedback {
+		width: calc(100% * 3 / 7);
+	}
+	.textWrap_submit {
+		width: calc(100% / 3);
+		margin-left: calc((100% * 2 / 3) - 1px);
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.header {
+		background-color: $blu;
+		z-index: 205;
+	}
+	.grid {
+		z-index: 210;
+	}
+	.pages {
+		padding-right: 10%;
+		padding-left: 10%;
+		flex-wrap: wrap;
+	}
+	.contacts {
+		width: 100%;
+		margin-right: 0;
+	}
+	.input__style_select,
+	.contactsOptions__wrap {
+		width: calc(50% - 1px);
+	}
+	.feedback {
+		width: 100%;
+	}
+	.textWrap_submit {
+		width: 50%;
+		margin-left: calc(50% - 1px);
+	}
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+	.pages {
+		padding-top: calc(44px + 2em);
+	}
+	.contactsOptions__wrap_open .contactsOptions__scroll {
+		height: 65vh;
+	}
+	.feedback__form {
+		textarea {
+			height: 30vh;
+		}
+	}
+}
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+	.pages {
+		padding-top: calc(44px + 2em);
+	}
+	.head {
+		font-size: 1.45em;
+	}
+	.contacts__txt,
+	.contacts__offices,
+	#officesList,
+	.contactsOptions__item {
+		font-size: 1.1em;
+	}
+	.feedback__form {
+		input,
+		textarea {
+			font-size: 1.1em;
+		}
+		textarea {
+			height: 20vh;
+		}
+	}
+	.input__style_select,
+	.contactsOptions__wrap {
+		width: calc(100% - 1px);
+	}
+	.contactsOptions__wrap_open .contactsOptions__scroll {
+		height: 65vh;
+	}
+}
