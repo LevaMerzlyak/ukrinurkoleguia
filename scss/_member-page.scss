@@ -4,15 +4,6 @@
 .grid {
 	position: absolute;
 }
-.grid__line {
-	@for $i from 1 through 3 {
-		&:nth-child(#{$i}) {
-			&:before {
-				display: none;
-			}
-		}
-	}
-}
 .bg__part_main {
 	transition: width 1.5s ease-in-out 0s, transform 1.5s ease-in-out 0s;
 	.bg__inner {
