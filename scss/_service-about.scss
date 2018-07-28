@@ -54,6 +54,13 @@
 	span {
 		font-weight: 700;
 	}
+	a {
+		color: $blu;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 .service__txt_sup {
 	font-family: 'Bodoni', serif;

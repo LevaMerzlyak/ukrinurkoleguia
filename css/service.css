@@ -929,6 +929,11 @@ body {
   margin-left: calc(100% / 7); }
   .service__txt span {
     font-weight: 700; }
+  .service__txt a {
+    color: #1b417b;
+    text-decoration: none; }
+    .service__txt a:hover {
+      text-decoration: underline; }
 
 .service__txt_sup {
   font-family: 'Bodoni', serif;
