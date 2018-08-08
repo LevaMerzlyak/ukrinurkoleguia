@@ -646,6 +646,8 @@ body {
   -o-transition: width 1.5s ease-in-out 0s, transform 1.5s ease-in-out 0s;
   transition: width 1.5s ease-in-out 0s, transform 1.5s ease-in-out 0s;
   transition: width 1.5s ease-in-out 0s, transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s; }
+  .bg__part_main:after {
+    background-color: rgba(0, 0, 0, 0.25); }
   .bg__part_main .bg__inner {
     width: 44.8vw; }
 
@@ -671,9 +673,15 @@ body {
   margin-left: 55.2%;
   margin-right: 13.6%; }
 
+.textWrap_head {
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
+
 .textWrap_position {
   margin-top: 2em;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
 
 .member__position {
   font-family: 'ProximaNova', sans-serif;
@@ -685,7 +693,9 @@ body {
 
 .memberInfo__wrap {
   overflow: hidden;
-  height: 60%; }
+  height: 60%;
+  -ms-flex-negative: 3;
+  flex-shrink: 3; }
 
 .memberInfo {
   height: 100%;
@@ -731,6 +741,10 @@ body {
     position: absolute;
     left: 0;
     top: 1em; }
+
+@media only screen and (max-width: 1250px) and (orientation: landscape) {
+  .head {
+    font-size: 3.5em; } }
 
 @media only screen and (max-width: 1000px) {
   .loaded .bg__part_main {
@@ -787,13 +801,21 @@ body {
   .textWrap_txt {
     margin-bottom: 1em; } }
 
-@media only screen and (max-width: 700px) and (orientation: landscape) {
+@media only screen and (max-width: 800px) and (orientation: landscape) {
   .head {
-    font-size: 3.5em; } }
+    font-size: 3.2em; } }
 
-@media only screen and (max-width: 600px) and (orientation: landscape) {
+@media only screen and (max-width: 720px) and (orientation: landscape) {
   .head {
-    font-size: 3em; }
+    font-size: 2.9em; } }
+
+@media only screen and (max-width: 650px) and (orientation: landscape) {
+  .head {
+    font-size: 2.8em; } }
+
+@media only screen and (max-width: 630px) and (orientation: landscape) {
+  .head {
+    font-size: 2.5em; }
   .textWrap_position {
     margin-bottom: 2em; }
   .textWrap_txt {
@@ -801,8 +823,9 @@ body {
 
 @media only screen and (max-width: 500px) and (orientation: landscape) {
   .head {
-    font-size: 2.5em; }
-  .textWrap_info {
+    font-size: 2.1em; }
+  .textWrap_info,
+  .textWrap_txt_first {
     margin-left: 0; } }
 
 @media only screen and (max-width: 420px) and (orientation: portrait) {
@@ -813,15 +836,21 @@ body {
   .mainTxt {
     height: auto;
     margin-top: 70vh;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .head {
+    font-size: 3.6em; } }
+
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+  .head {
+    font-size: 3.3em; } }
 
 @media only screen and (max-width: 370px) and (orientation: portrait) {
   .head {
-    font-size: 4em; } }
+    font-size: 3.1em; } }
 
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   .head {
-    font-size: 3.5em; }
+    font-size: 2.8em; }
   .bg__part_main {
     height: 75vh; }
   .mainTxt {
