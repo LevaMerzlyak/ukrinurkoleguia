@@ -828,6 +828,14 @@ body {
   .mainMenu__item:not(:last-child) {
     margin-bottom: 1em; } }
 
+@media only screen and (max-width: 630px) and (orientation: landscape) {
+  .head {
+    font-size: 1.8em; } }
+
+@media only screen and (max-width: 560px) and (orientation: landscape) {
+  .head {
+    font-size: 1.65em; } }
+
 @media only screen and (max-width: 900px) and (orientation: portrait) {
   .mainMenu__wrap {
     height: 60vh; } }
@@ -839,7 +847,9 @@ body {
 
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   .mainMenu__item_active .mainMenu__link {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .head {
+    font-size: 1.7em; } }
 
 .service {
   position: relative;
@@ -887,6 +897,11 @@ body {
   margin-left: calc(100% / 7); }
   .service__txt span {
     font-weight: 700; }
+  .service__txt a {
+    color: #1b417b;
+    text-decoration: none; }
+    .service__txt a:hover {
+      text-decoration: underline; }
 
 .service__txt_sup {
   font-family: 'Bodoni', serif;

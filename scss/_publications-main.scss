@@ -202,6 +202,16 @@
 		}
 	}
 }
+@media only screen and (max-width: 630px) and (orientation: landscape) {
+	.head {
+		font-size: 1.8em;
+	}
+}
+@media only screen and (max-width: 560px) and (orientation: landscape) {
+	.head {
+		font-size: 1.65em;
+	}
+}
 @media only screen and (max-width: 900px) and (orientation: portrait) {
 	.mainMenu__wrap {
 		height: 60vh;
@@ -218,5 +228,8 @@
 		.mainMenu__link {
 			font-size: 1em;
 		}
+	}
+	.head {
+		font-size: 1.7em;
 	}
 }

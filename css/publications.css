@@ -828,6 +828,14 @@ body {
   .mainMenu__item:not(:last-child) {
     margin-bottom: 1em; } }
 
+@media only screen and (max-width: 630px) and (orientation: landscape) {
+  .head {
+    font-size: 1.8em; } }
+
+@media only screen and (max-width: 560px) and (orientation: landscape) {
+  .head {
+    font-size: 1.65em; } }
+
 @media only screen and (max-width: 900px) and (orientation: portrait) {
   .mainMenu__wrap {
     height: 60vh; } }
@@ -839,7 +847,9 @@ body {
 
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   .mainMenu__item_active .mainMenu__link {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .head {
+    font-size: 1.7em; } }
 
 .publications {
   position: relative;
@@ -871,6 +881,14 @@ body {
 .publication {
   margin-top: 4em;
   margin-bottom: 4em; }
+
+.publication__date {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #1b417b;
+  letter-spacing: 0em;
+  margin-bottom: 1em; }
 
 .publication__head {
   font-family: 'Bodoni', serif;
@@ -919,7 +937,8 @@ body {
 
 .publication__head,
 .publication__txt,
-.publication__detailsBtn {
+.publication__detailsBtn,
+.publication__date {
   margin-left: calc(100% / 7);
   margin-right: calc(100% / 7); }
 
@@ -933,7 +952,8 @@ body {
     .publication__head:before {
       left: calc(-1em - 0.35em); }
   .publication__txt,
-  .publication__detailsBtn {
+  .publication__detailsBtn,
+  .publication__date {
     margin-left: 0;
     margin-right: 0; } }
 
