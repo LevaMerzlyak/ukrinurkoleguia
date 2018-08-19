@@ -54,6 +54,9 @@
 	span {
 		font-weight: 700;
 	}
+	em {
+		font-style: italic;
+	}
 	a {
 		color: $blu;
 		text-decoration: none;
@@ -69,6 +72,12 @@
 	color: $aboutTxt;
 	line-height: 0.9em;
 	margin-left: 0;
+}
+.service__img {
+	margin-right: calc(100% / 7);
+	margin-left: calc(100% / 7);
+	width: calc(100% - ((100% / 7) * 2));
+	height: auto;
 }
 .serviceTxt__list {
 	margin-right: calc(100% / 7);
@@ -107,6 +116,11 @@
 	.serviceTxt__list {
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.service__img {
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 420px) and (orientation: portrait) {

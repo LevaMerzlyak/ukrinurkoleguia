@@ -897,6 +897,8 @@ body {
   margin-left: calc(100% / 7); }
   .service__txt span {
     font-weight: 700; }
+  .service__txt em {
+    font-style: italic; }
   .service__txt a {
     color: #1b417b;
     text-decoration: none; }
@@ -910,6 +912,12 @@ body {
   color: #2b2b2b;
   line-height: 0.9em;
   margin-left: 0; }
+
+.service__img {
+  margin-right: calc(100% / 7);
+  margin-left: calc(100% / 7);
+  width: calc(100% - ((100% / 7) * 2));
+  height: auto; }
 
 .serviceTxt__list {
   margin-right: calc(100% / 7);
@@ -944,7 +952,11 @@ body {
   .service__txt,
   .serviceTxt__list {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .service__img {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%; } }
 
 @media only screen and (max-width: 420px) and (orientation: portrait) {
   .service {
