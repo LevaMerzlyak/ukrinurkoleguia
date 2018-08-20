@@ -73,6 +73,13 @@
 	line-height: 1.5em;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	a {
+		color: $blu;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 .publication__detailsBtn {
 	font-family: 'ProximaNova', sans-serif;

@@ -836,6 +836,11 @@ body {
   line-height: 1.5em;
   margin-top: 1em;
   margin-bottom: 1em; }
+  .publication__txt a {
+    color: #1b417b;
+    text-decoration: none; }
+    .publication__txt a:hover {
+      text-decoration: underline; }
 
 .publication__detailsBtn {
   font-family: 'ProximaNova', sans-serif;
