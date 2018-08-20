@@ -773,10 +773,7 @@ body {
   text-decoration: underline; }
 
 .mainMenu__item_active:not(:last-child) {
-  margin-bottom: 7.5%; }
-
-.mainMenu__item_active:last-child {
-  margin-top: 7.5%; }
+  margin-bottom: 5%; }
 
 .mainMenu__item_active:before {
   content: "";
@@ -800,7 +797,7 @@ body {
   font-size: 2.1em;
   font-weight: 700;
   line-height: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   padding-left: 1em; }
 
 .loaded .mainMenu__item:before {
