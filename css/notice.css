@@ -3,7 +3,7 @@ body {
 
 .main {
   width: 100%;
-  height: 85vh;
+  height: 65vh;
   overflow: hidden;
   position: relative; }
 
@@ -685,9 +685,11 @@ body {
     width: 100%;
     max-width: 600px; } }
 
-@media only screen and (max-width: 900px) and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: portrait) {
   .main {
-    height: 100vh; }
+    height: 50vh; } }
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
   .mainTxt {
     height: calc(100% - (44px + 2em));
     margin-top: calc(44px + 2em); } }
@@ -716,7 +718,7 @@ body {
   .head {
     font-size: 2.5em; } }
 
-.service {
+.notice {
   position: relative;
   background-color: #fff;
   padding-top: 3em;
@@ -725,115 +727,84 @@ body {
   -webkit-transition: all 1s ease-in-out 2.5s;
   -o-transition: all 1s ease-in-out 2.5s;
   transition: all 1s ease-in-out 2.5s; }
-  .service .grid {
+  .notice .grid {
     top: 0;
     height: 100%; }
-  .service .grid__line:before {
+  .notice .grid__line:before {
     background-color: rgba(179, 179, 179, 0.3);
     height: 100%; }
-  .service .loaded .grid__line:before {
+  .notice .loaded .grid__line:before {
     height: 100%; }
 
-.loaded .service {
+.loaded .notice {
   opacity: 1; }
 
-.serviceTxt {
+.noticeTxt {
   margin-left: 13.6%;
   margin-right: 13.6%;
   position: relative;
   z-index: 150; }
-  .serviceTxt .textWrap {
+  .noticeTxt .textWrap {
     margin-top: 2em;
-    margin-bottom: 2em; }
-  .serviceTxt .textWrap_txtSup {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em; }
+    margin-bottom: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
-.service__txt {
+.notice__case {
+  width: calc((100% / 7) * 2);
+  height: 1.5em;
+  background-color: #1b417b;
   font-family: 'ProximaNova', sans-serif;
   font-size: 1.43em;
-  font-weight: 400;
-  color: #2b2b2b;
-  letter-spacing: 0em;
-  line-height: 1.5em;
-  margin-right: calc(100% / 7);
-  margin-left: calc(100% / 7); }
-  .service__txt span {
-    font-weight: 700; }
-  .service__txt em {
-    font-style: italic; }
-  .service__txt a {
-    color: #1b417b;
-    text-decoration: none; }
-    .service__txt a:hover {
-      text-decoration: underline; }
-
-.service__txt_sup {
-  font-family: 'Bodoni', serif;
-  font-size: 2.9em;
   font-weight: 700;
-  color: #2b2b2b;
-  line-height: 0.9em;
-  margin-left: 0; }
+  color: #fff;
+  letter-spacing: 0em;
+  line-height: 1.5em;
+  text-align: center; }
 
-.service__img {
-  margin-right: calc(100% / 7);
-  margin-left: calc(100% / 7);
-  width: calc(100% - ((100% / 7) * 2));
-  height: auto; }
-
-.serviceTxt__list {
-  margin-right: calc(100% / 7);
-  margin-left: calc(100% / 7); }
-
-.serviceTxt__item {
+.notice__txt {
+  width: calc((100% / 7) * 4);
+  padding-left: 1em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'ProximaNova', sans-serif;
   font-size: 1.43em;
   font-weight: 400;
   color: #2b2b2b;
   letter-spacing: 0em;
-  line-height: 1.5em;
-  padding-left: 2em;
-  position: relative; }
-  .serviceTxt__item:before {
-    content: "";
-    display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #1b417b;
-    position: absolute;
-    left: 0;
-    top: calc(0.75em - 2px); }
-  .serviceTxt__item:not(:last-child) {
-    margin-bottom: 1em; }
+  line-height: 1.5em; }
+  .notice__txt span {
+    font-weight: 700; }
 
-@media only screen and (max-width: 900px) {
-  .serviceTxt {
+@media only screen and (max-width: 1200px) {
+  .notice__txt {
+    width: calc((100% / 7) * 5); } }
+
+@media only screen and (max-width: 1000px) {
+  .notice__case {
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0.5em; }
+  .notice__txt {
+    width: 100%;
+    padding-left: 0; }
+  .noticeTxt {
     margin-left: 10%;
     margin-right: 10%; }
-  .service__txt,
-  .serviceTxt__list {
-    margin-left: 0;
-    margin-right: 0; }
-  .service__img {
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%; } }
+    .noticeTxt .textWrap {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 @media only screen and (max-width: 420px) and (orientation: portrait) {
-  .service {
+  .notice {
     padding-top: 1em;
     padding-bottom: 1em; }
-  .serviceTxt .textWrap_txtSup {
-    margin-top: 2em;
-    margin-bottom: 2em; } }
-
-@media only screen and (max-width: 350px) and (orientation: portrait) {
-  .service__txt_sup {
-    font-size: 2.5em; } }
+  .notice__case {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; } }
 
 .mobMenu {
   display: none; }

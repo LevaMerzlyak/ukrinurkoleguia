@@ -58,10 +58,12 @@
 		max-width: 600px;
 	}
 }
-@media only screen and (max-width: 900px) and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: portrait) {
 	.main {
-		height: 100vh;
+		height: 50vh;
 	}
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
 	.mainTxt {
 		height: calc(100% - (44px + 2em));
 		margin-top: calc(44px + 2em);
