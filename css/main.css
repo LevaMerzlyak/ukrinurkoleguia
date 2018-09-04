@@ -2420,7 +2420,7 @@ body {
   .textWrap_slideHead {
     width: 100%; }
   .head {
-    font-size: 4em; }
+    font-size: 3.7em; }
   .areasTxt {
     margin-top: calc(44px + 2em); }
   .textWrap_areasHead {
@@ -2449,7 +2449,7 @@ body {
 
 @media only screen and (max-width: 400px) and (orientation: portrait) {
   .head {
-    font-size: 3.5em; }
+    font-size: 3.3em; }
   .subHead {
     font-size: 2.1em; }
   .textWrap_aboutTxt {
@@ -2462,12 +2462,14 @@ body {
     margin-bottom: 1em; } }
 
 @media only screen and (max-width: 365px) and (orientation: portrait) {
+  .head {
+    font-size: 3.2em; }
   .aboutTxt__txt {
     font-size: 1.1em; } }
 
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   .head {
-    font-size: 3.1em; }
+    font-size: 2.8em; }
   .slideTxt {
     margin-top: -10%; }
   .textWrap_slideTxt {
