@@ -548,8 +548,7 @@ body {
   background-color: #193e75; }
 
 .input__style_select {
-  margin-left: -1px;
-  width: calc((100% * 2 / 3) - 1px); }
+  width: calc(100% * 2 / 3); }
 
 .contacts__offices {
   font-family: 'ProximaNova', sans-serif;
@@ -591,8 +590,7 @@ body {
 .contactsOptions__wrap {
   visibility: hidden;
   position: relative;
-  margin-left: -1px;
-  width: calc((100% * 2 / 3) - 1px);
+  width: calc(100% * 2 / 3);
   -webkit-transition: visibility 0s 1s;
   -o-transition: visibility 0s 1s;
   transition: visibility 0s 1s; }

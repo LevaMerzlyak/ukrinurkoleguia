@@ -58,8 +58,7 @@
 	}
 }
 .input__style_select {
-	margin-left: -1px;
-	width: calc((100% * 2 / 3) - 1px);
+	width: calc(100% * 2 / 3);
 }
 .contacts__offices {
 	font-family: 'ProximaNova', sans-serif;
@@ -99,8 +98,7 @@
 .contactsOptions__wrap {
 	visibility: hidden;
 	position: relative;
-	margin-left: -1px;
-	width: calc((100% * 2 / 3) - 1px);
+	width: calc(100% * 2 / 3);
 	transition: visibility 0s 1s;
 }
 .contactsOptions__scroll {
