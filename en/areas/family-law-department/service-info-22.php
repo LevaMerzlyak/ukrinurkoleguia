@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/general-department/service-info-34.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -148,22 +116,22 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item">
+				<li class="mainMenu__item mainMenu__item_active">
 					<a href="../family-law-department.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">FAMILY LAW DEPARTMENT</p>
 					</a>
 					<ul class="serviceList">
 						<li class="serviceList__item">
-							<a href="../family-law-department/service-info-20.html" class="serviceList__link">Adoption</a>
+							<a href="service-info-20.html" class="serviceList__link">Adoption</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="../family-law-department/service-info-21.html" class="serviceList__link">Legal support of surrogacy programs</a>
+							<a href="service-info-21.html" class="serviceList__link">Legal support of surrogacy programs</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="../family-law-department/service-info-22.html" class="serviceList__link">Alimony obligations</a>
+							<a href="service-info-22.html" class="serviceList__link serviceList__link_active">Alimony obligations</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="../family-law-department/service-info-23.html" class="serviceList__link">International protection of children's rights</a>
+							<a href="service-info-23.html" class="serviceList__link">International protection of children's rights</a>
 						</li>
 					</ul>
 				</li>
@@ -201,19 +169,19 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item mainMenu__item_active">
+				<li class="mainMenu__item">
 					<a href="../general-department.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">GENERAL DEPARTMENT</p>
 					</a>
 					<ul class="serviceList">
 						<li class="serviceList__item">
-							<a href="service-info-33.html" class="serviceList__link">Obtaining documents from competent authorities</a>
+							<a href="../general-department/service-info-33.html" class="serviceList__link">Obtaining documents from competent authorities</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-34.html" class="serviceList__link serviceList__link_active">Legalization or Apostilisation</a>
+							<a href="../general-department/service-info-34.html" class="serviceList__link">Legalization or Apostilisation</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-35.html" class="serviceList__link">Translations</a>
+							<a href="../general-department/service-info-35.html" class="serviceList__link">Translations</a>
 						</li>
 					</ul>
 				</li>
