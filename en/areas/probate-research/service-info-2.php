@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/probate-research/service-info-3.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -79,10 +47,10 @@
 							<a href="service-info-1.html" class="serviceList__link">Locating missing or unknown heirs</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-2.html" class="serviceList__link">Verification of inheritance case existence abroad</a>
+							<a href="service-info-2.html" class="serviceList__link serviceList__link_active">Verification of inheritance case existence abroad</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-3.html" class="serviceList__link serviceList__link_active">Obtaining of archival documents from civil registrar offices</a>
+							<a href="service-info-3.html" class="serviceList__link">Obtaining of archival documents from civil registrar offices</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-4.html" class="serviceList__link">Jewish Genealogy</a>
@@ -223,7 +191,10 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap">
-				<p class="service__txt">On behalf of its foreign partners as well as in the case of applications of citizens residing abroad Ukriniurkoleguia performs obtaining of documents from Ukrainian civil registrar offices and state archives with their certification for further foreign use (by the means of legalization or apostille).</p>
+				<p class="service__txt">Each month Ukriniurkoleguia receives dozens of applications from Ukrainian citizens with requests to verify if there is any estate remained after the death of their relative or what happened to the estate of one’s relative who died many years ago.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">With the assistance of its foreign correspondents Ukriniurkoleguia verifies inheritance case existence, availability of unclaimed estates as well as discovers status of old estate matters. The mentioned verification is possible only if the applicants have all necessary information about the deceased (complete name, approximate year and place of birth, last place of residence and the year of death (at least approximate) and if the applicants are entitled to inherit in conformity with the inheritance law of the country where the deceased passed away.</p>
 			</div>
 		</div>
 	</section>
