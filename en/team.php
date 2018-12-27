@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>ukriniurkoleguia</title>
+	<!-- Preloader -->
+	<link rel="stylesheet" type="text/css" href="../css/preloader.css">
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/team.css">
+
+</head>
+<body class="loading">
+	<div class="loader__wrap"></div>
+	<div class="loader">
+		<div class="loader__bg"></div>
+	</div>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
+	<main class="main" id="bg1">
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<div class="bg__part bg__part_main">
+			<div class="bg__inner"></div>
+		</div>
+		<img class="bg__img" src="../images/team.jpg">
+		<div class="mainTxt">
+			<div class="textWrap textWrap_head">
+				<h1 class="head anim__txt">Team Ukrinurkoleguia</h1>
+			</div>
+			<ul class="mainMenu">
+				<li class="mainMenu__item">
+					<a href="about.html" class="mainMenu__link textWrap">
+						<p class="anim__txt">About us</p>
+					</a>
+				</li>
+				<li class="mainMenu__item">
+					<a href="vacancies.html" class="mainMenu__link textWrap">
+						<p class="anim__txt">Vacancies</p>
+					</a>
+				</li>
+				<li class="mainMenu__item mainMenu__item_active">
+					<a href="team.html" class="mainMenu__link textWrap">
+						<p class="anim__txt">Team</p>
+					</a>
+				</li>
+				<li class="mainMenu__item">
+					<a href="news.html" class="mainMenu__link textWrap">
+						<p class="anim__txt">News</p>
+					</a>
+				</li>
+			</ul>					
+		</div>
+	</main>
+	<section class="team">
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Pavlov.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Mykola Pavlov</h2>
+				<p class="member__position">President, Managing Partner, Head of Civil law Department</p>
+				<a href="team/Pavlov.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Klimenko.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Tamara Klimenko</h2>
+				<p class="member__position">Head of the Сouncil of Ukriniurkoleguia, Managing Partner, Head of Estate law Department</p>
+				<a href="team/Klimenko.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Kiyko.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Pavlo Kiyko</h2>
+				<p class="member__position">Deputy Head of the Сouncil of Ukriniurkoleguia, Managing Partner, Chief of Section for Canada</p>
+				<a href="team/Kiyko.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Chyzhmar.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Ivan Chyzhmar </h2>
+				<p class="member__position">Managing Partner, Head of West Ukrainian Bureau, Lviv</p>
+				<a href="team/Chyzhmar.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Bondarenko.png" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Maria Bondarenko</h2>
+				<p class="member__position">Head of Transcarpathian Bureau, Uzhgorod</p>
+				<a href="team/Bondarenko.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Kuchakovska.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Natalia Kuchakovska</h2>
+				<p class="member__position">Chief of Section for Middle East</p>
+				<a href="team/Kuchakovska.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Semenova.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Yulia Semenova</h2>
+				<p class="member__position">Head of International Genealogy Research and Probate Department</p>
+				<a href="team/Semenova.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Soroka.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Natalia Soroka</h2>
+				<p class="member__position">Head of Regional Genealogy Research Section</p>
+				<a href="team/Soroka.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Karavan.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Olha Karavan</h2>
+				<p class="member__position">Attorney at law</p>
+				<a href="team/Karavan.html" class="member__link">details</a>
+			</div>
+		</div>
+		<div class="teamMember">
+			<div class="memberImg">
+				<div class="memberImg__wrap">
+					<img src="../images/team/Smolynets.jpg" alt="" class="member__img">
+				</div>
+			</div>
+			<div class="memberTxt">
+				<h2 class="member__name">Daria Smolynets</h2>
+				<p class="member__position">Attorney at law</p>
+				<a href="team/Smolynets.html" class="member__link">details</a>
+			</div>
+		</div>
+	</section>
+		<!-- jQuery -->
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<!-- Preloader -->
+	<script type="text/javascript" src="../js/preloader.js"></script>
+		<!-- Backgrounds Init -->
+	<script type="text/javascript" src="../js/bgInit.js"></script>
+	<script>
+		b1 = new BgInit('#bg1');
+	</script>
+		<!-- Mobile Menu -->
+	<script type="text/javascript" src="../js/mobMenu.js"></script>
+	<script>
+		m1 = new MobileMenu('#mobMenu');
+	</script>
+</body>
+</html>
