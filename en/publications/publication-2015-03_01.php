@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item">
-				<a href="../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../publications/publication-2014-02_01.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -70,17 +38,17 @@
 		<img class="bg__img" src="../../images/areas.jpg">
 		<div class="mainTxt">
 			<div class="textWrap textWrap_head">
-				<h1 class="head anim__txt">Outstanding Afterlife.</h1>
+				<h1 class="head anim__txt">The only way to preserve the Ukrainian state &mdash; Euro-Atlantic choice of Ukraine.</h1>
 			</div>				
 		</div>
 	</main>
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap textWrap_txtSup">
-				<p class="service__txt service__txt_sup">The article discusses topical issues of handling estate matters with foreign element.</p>
+				<p class="service__txt service__txt_sup">The article is devoted to the conference of the All-Ukrainian social movement &laquo;Ukraine in NATO&raquo;.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt"><a href="../../publications/publication-2014-02_01.html">Only Ukrainian version of the full text is available.</a></p>
+				<p class="service__txt"><a href="../../publications/publication-2015-03_01.html">Only Ukrainian version of the full text is available.</a></p>
 			</div>
 		</div>
 	</section>
