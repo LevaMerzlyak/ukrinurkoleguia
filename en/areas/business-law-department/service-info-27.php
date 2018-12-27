@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/business-law-department/service-info-30.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -182,7 +150,7 @@
 							<a href="service-info-26.html" class="serviceList__link">Registration of business entities and business activity assistance</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-27.html" class="serviceList__link">Foreign investment support</a>
+							<a href="service-info-27.html" class="serviceList__link serviceList__link_active">Foreign investment support</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-28.html" class="serviceList__link">Real estate operations</a>
@@ -191,7 +159,7 @@
 							<a href="service-info-29.html" class="serviceList__link">Taxation</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-30.html" class="serviceList__link serviceList__link_active">Debt recovery. Bankruptcy</a>
+							<a href="service-info-30.html" class="serviceList__link">Debt recovery. Bankruptcy</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-31.html" class="serviceList__link">Registration of non-profit organizations and public associations</a>
@@ -223,22 +191,16 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap">
-				<p class="service__txt">The fulfillment of business obligations in violation of the legislative and regulatory requirements often leads to indebtedness. The lender is the first person interested in the fastest settlement of such debts in full. On the other hand, in the course of debt recovery, the debtor needs protection of his rights and interests, especially when the indebtedness occurred due to some special conditions on his side.</p>
+				<p class="service__txt">It is no secret that investment in Ukraine is a perspective and profitable way for foreign investors to obtain revenue due to impetuous growth of certain sectors of economy.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Debt collection may be performed with application of judicial and non-judicial proceedings and may be related to forced debt collection.</p>
+				<p class="service__txt">Nevertheless, due to specific features of Ukrainian legislation and its differences compared with the foreign legislations, part of potential foreign investors refrain from investment in Ukraine; at the same time the persons who have already invested in Ukraine, frequently do not benefit in full from their investment possibilities.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Both parties in a debt dispute (lender and debtor) require complex legal support aimed at protection of their legal rights and interests.</p>
+				<p class="service__txt">The successful experience of many foreign investors in Ukraine shows that the effectiveness and security of foreign investments in Ukraine and the factual profit obtained greatly depends on availability of comprehensive and impartial information on legal regulation of foreign investment in Ukraine, reinforced by practical experience in providing legal support to investment activity.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">In case a certain portion of indebtedness remains, which cannot be repaid during the period, set forth by legislation, it may be necessary to carry out a special liquidation procedure in relation to debtor for the purpose of settling the mentioned indebtedness. This procedure is known as bankruptcy.</p>
-			</div>
-			<div class="textWrap">
-				<p class="service__txt">During the recovery of the debtor’s solvency or its declaration of bankruptcy both the insolvent party and its lenders need efficient legal assistance.</p>
-			</div>
-			<div class="textWrap">
-				<p class="service__txt">Based on our practical experience, we provide legal assistance and counseling on issues of debt recovery by means of judicial and non-judicial regulation, as well as legal support of a full range of debtor’s solvency recovery and bankrupt declaration procedures.</p>
+				<p class="service__txt">Using our current practical experience in the field of foreign investment in Ukraine, our company provides counseling and legal assistance in organization and implementation of various forms of foreign investments in Ukraine, as well as legal assistance in obtaining profit from investments in Ukraine and protection of rights and interests of foreign investors. Moreover, Ukriniurkoleguia counsels have extensive experience in representation of foreign investors before Ukrainian national courts and in international investment arbitration proceedings, in particular, under the ICSID Regulations and Rules.</p>
 			</div>
 		</div>
 	</section>

@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/business-law-department/service-info-30.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -191,10 +159,10 @@
 							<a href="service-info-29.html" class="serviceList__link">Taxation</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-30.html" class="serviceList__link serviceList__link_active">Debt recovery. Bankruptcy</a>
+							<a href="service-info-30.html" class="serviceList__link">Debt recovery. Bankruptcy</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-31.html" class="serviceList__link">Registration of non-profit organizations and public associations</a>
+							<a href="service-info-31.html" class="serviceList__link serviceList__link_active">Registration of non-profit organizations and public associations</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-32.html" class="serviceList__link">Intellectual property</a>
@@ -223,22 +191,28 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap">
-				<p class="service__txt">The fulfillment of business obligations in violation of the legislative and regulatory requirements often leads to indebtedness. The lender is the first person interested in the fastest settlement of such debts in full. On the other hand, in the course of debt recovery, the debtor needs protection of his rights and interests, especially when the indebtedness occurred due to some special conditions on his side.</p>
+				<p class="service__txt">The citizens’ right to freedom of association is an integral human right, sealed by the Universal declaration of human rights and guaranteed by the Constitution and legislation of Ukraine.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Debt collection may be performed with application of judicial and non-judicial proceedings and may be related to forced debt collection.</p>
+				<p class="service__txt">Depending on legal nature of existence and field of activity, the active legislation distinguishes between the following public associations: public organizations, political parties, religious organizations, trade unions and other public associations.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Both parties in a debt dispute (lender and debtor) require complex legal support aimed at protection of their legal rights and interests.</p>
+				<p class="service__txt">Each of the mentioned associations has specific peculiarities of foundation and functioning, including a specific registration procedure when compared to other legal entities which are predetermined by corresponding legal regulation.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">In case a certain portion of indebtedness remains, which cannot be repaid during the period, set forth by legislation, it may be necessary to carry out a special liquidation procedure in relation to debtor for the purpose of settling the mentioned indebtedness. This procedure is known as bankruptcy.</p>
+				<p class="service__txt">Moreover, the active legislation provides a possibility of association of the mentioned entities.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">During the recovery of the debtor’s solvency or its declaration of bankruptcy both the insolvent party and its lenders need efficient legal assistance.</p>
+				<p class="service__txt">Usually, public associations are created as nonprofit organizations in the most general meaning in order to assure satisfaction of certain common interests of their participants without making a profit.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Based on our practical experience, we provide legal assistance and counseling on issues of debt recovery by means of judicial and non-judicial regulation, as well as legal support of a full range of debtor’s solvency recovery and bankrupt declaration procedures.</p>
+				<p class="service__txt">In accordance with the requirements of active legislation, a public association may be considered a nonprofit organization only after it obtains a corresponding status and after its registration is filed with the Registry of nonprofit organizations. The current legislation also stipulates a possibility for other entities to obtain a nonprofit organization status, in particular for enterprises’ associations, in certain cases.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">The absence of obstacles on the way of obtaining a nonprofit organization status is caused, inter alia, by the fulfillment of all necessary prerequisites at the phase of foundation and registration of a public association.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">Our company provides a full range of services on registration of public associations, including assistance in all registration procedures on public associations, along with services on obtaining nonprofit organization status by the entities entitled to it.</p>
 			</div>
 		</div>
 	</section>

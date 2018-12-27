@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/business-law-department/service-info-30.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -173,7 +141,7 @@
 					</a>
 					<ul class="serviceList">
 						<li class="serviceList__item">
-							<a href="service-info-24.html" class="serviceList__link">International arbitration</a>
+							<a href="service-info-24.html" class="serviceList__link serviceList__link_active">International arbitration</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-25.html" class="serviceList__link">Representation in judicial bodies and state executive service</a>
@@ -191,7 +159,7 @@
 							<a href="service-info-29.html" class="serviceList__link">Taxation</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-30.html" class="serviceList__link serviceList__link_active">Debt recovery. Bankruptcy</a>
+							<a href="service-info-30.html" class="serviceList__link">Debt recovery. Bankruptcy</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-31.html" class="serviceList__link">Registration of non-profit organizations and public associations</a>
@@ -223,22 +191,22 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap">
-				<p class="service__txt">The fulfillment of business obligations in violation of the legislative and regulatory requirements often leads to indebtedness. The lender is the first person interested in the fastest settlement of such debts in full. On the other hand, in the course of debt recovery, the debtor needs protection of his rights and interests, especially when the indebtedness occurred due to some special conditions on his side.</p>
+				<p class="service__txt">Foreign trade operations between Ukrainian and foreign subjects of business activity are sometimes performed with violation of obligations stipulated in foreign economic contracts, legislative norms and common business practice. These circumstances frequently result in disputes of private legal nature in the sphere foreign business activity.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Debt collection may be performed with application of judicial and non-judicial proceedings and may be related to forced debt collection.</p>
+				<p class="service__txt">For the settlement private international commercial disputes, the world practice disposes a wide range of legal mechanisms and special bodies the activity of which serves for the mentioned purpose.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Both parties in a debt dispute (lender and debtor) require complex legal support aimed at protection of their legal rights and interests.</p>
+				<p class="service__txt">As of now, an application for legal protection to an arbitration institution is considered to be the fastest and most efficient way of settling private international commercial disputes.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">In case a certain portion of indebtedness remains, which cannot be repaid during the period, set forth by legislation, it may be necessary to carry out a special liquidation procedure in relation to debtor for the purpose of settling the mentioned indebtedness. This procedure is known as bankruptcy.</p>
+				<p class="service__txt">The rules of arbitration may vary significantly depending on the arbitration institution chosen for private international commercial dispute settlement. Moreover, proceedings may be complicated for one of the parties by choice of law applicable to the legal relationship in accordance with the foreign economic contract, as well as the law regulating the very arbitration proceedings.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">During the recovery of the debtor’s solvency or its declaration of bankruptcy both the insolvent party and its lenders need efficient legal assistance.</p>
+				<p class="service__txt">Thus, it should be noted that the procedure of recognition and forced execution of the arbitration institution’s decision has proper specifics and peculiarities.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Based on our practical experience, we provide legal assistance and counseling on issues of debt recovery by means of judicial and non-judicial regulation, as well as legal support of a full range of debtor’s solvency recovery and bankrupt declaration procedures.</p>
+				<p class="service__txt">Professionals of our company have experience in handling cases under the rules of ICC, UNCITRAL, SCC, LCIA, ICSID, and ICAC at the UCCI. Ukriniurkoleguia counsels have all required skills and extensive work experience at their disposal to protect our clients from foreign legislation and arbitration pitfalls, renewing their rights and contributing to effective execution of arbitration decisions for our clients’ benefit.</p>
 			</div>
 		</div>
 	</section>

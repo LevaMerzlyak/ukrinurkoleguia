@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/business-law-department/service-info-30.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -191,13 +159,13 @@
 							<a href="service-info-29.html" class="serviceList__link">Taxation</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-30.html" class="serviceList__link serviceList__link_active">Debt recovery. Bankruptcy</a>
+							<a href="service-info-30.html" class="serviceList__link">Debt recovery. Bankruptcy</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-31.html" class="serviceList__link">Registration of non-profit organizations and public associations</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-32.html" class="serviceList__link">Intellectual property</a>
+							<a href="service-info-32.html" class="serviceList__link serviceList__link_active">Intellectual property</a>
 						</li>
 					</ul>
 				</li>
@@ -223,22 +191,22 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap">
-				<p class="service__txt">The fulfillment of business obligations in violation of the legislative and regulatory requirements often leads to indebtedness. The lender is the first person interested in the fastest settlement of such debts in full. On the other hand, in the course of debt recovery, the debtor needs protection of his rights and interests, especially when the indebtedness occurred due to some special conditions on his side.</p>
+				<p class="service__txt">At the modern stage of rapid development of information society and scientific and technical progress, intellectual property appears to be one of the most precious resources of a business entity.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Debt collection may be performed with application of judicial and non-judicial proceedings and may be related to forced debt collection.</p>
+				<p class="service__txt">A recognizable trade mark and industrial model of goods design is an unconditional prerequisite for successful sales of goods, while inventions and useful models have a decisive competitive significance in innovative fields of production, and computer programs that are objects of intellectual property for some business entities are the principal source of profit. These are just some examples of a very large set of commercial uses of intellectual property for corresponding objects, present in our everyday life.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Both parties in a debt dispute (lender and debtor) require complex legal support aimed at protection of their legal rights and interests.</p>
+				<p class="service__txt">The current legislation distinguishes between the following objects of intellectual property: literary and art works, computer programs, data compilations (databases), performances, audio, and video recordings, broadcasts (programs) of broadcast organizations, scientific discoveries, inventions, useful models, industrial samples, composing (topography) of integral microchips, rationalization proposals, cultivars, animal breeds, commercial (company) names, trademarks (logos on goods and services), geographic denominations, commercial secrets.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">In case a certain portion of indebtedness remains, which cannot be repaid during the period, set forth by legislation, it may be necessary to carry out a special liquidation procedure in relation to debtor for the purpose of settling the mentioned indebtedness. This procedure is known as bankruptcy.</p>
+				<p class="service__txt">The legal regulation of acquisition and realization of intellectual property rights in relation to each of the subjects mentioned above has its peculiarities of practical application of these objects in commercial activity and noncommercial turnover.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">During the recovery of the debtor’s solvency or its declaration of bankruptcy both the insolvent party and its lenders need efficient legal assistance.</p>
+				<p class="service__txt">Taking into account the aforesaid, the protection of intellectual property rights becomes an important aspect of a business entity’s activity.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Based on our practical experience, we provide legal assistance and counseling on issues of debt recovery by means of judicial and non-judicial regulation, as well as legal support of a full range of debtor’s solvency recovery and bankrupt declaration procedures.</p>
+				<p class="service__txt">In this area, we provide services on registration (including foreign patenting) and transfer of rights to intellectual property objects, as well as counseling on all the issues of intellectual property rights realization and protection.</p>
 			</div>
 		</div>
 	</section>

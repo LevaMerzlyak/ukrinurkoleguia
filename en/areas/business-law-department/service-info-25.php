@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/business-law-department/service-info-30.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -176,7 +144,7 @@
 							<a href="service-info-24.html" class="serviceList__link">International arbitration</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-25.html" class="serviceList__link">Representation in judicial bodies and state executive service</a>
+							<a href="service-info-25.html" class="serviceList__link serviceList__link_active">Representation in judicial bodies and state executive service</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-26.html" class="serviceList__link">Registration of business entities and business activity assistance</a>
@@ -191,7 +159,7 @@
 							<a href="service-info-29.html" class="serviceList__link">Taxation</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-30.html" class="serviceList__link serviceList__link_active">Debt recovery. Bankruptcy</a>
+							<a href="service-info-30.html" class="serviceList__link">Debt recovery. Bankruptcy</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-31.html" class="serviceList__link">Registration of non-profit organizations and public associations</a>
@@ -223,22 +191,19 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap">
-				<p class="service__txt">The fulfillment of business obligations in violation of the legislative and regulatory requirements often leads to indebtedness. The lender is the first person interested in the fastest settlement of such debts in full. On the other hand, in the course of debt recovery, the debtor needs protection of his rights and interests, especially when the indebtedness occurred due to some special conditions on his side.</p>
+				<p class="service__txt">Modern commercial activity often leads to a necessity to take legal action in order to protect one’s infringed rights and interests, while certain disadvantageous circumstances may cause necessity to defend one’s own rights from illegal encroachment from the side of other subjects of business activity and state authorities.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Debt collection may be performed with application of judicial and non-judicial proceedings and may be related to forced debt collection.</p>
+				<p class="service__txt">Since the Ukrainian judicial system is designed to extend its jurisdiction for all disputes regardless their nature, a judicial recourse to a competent court within the system of judicial power of Ukraine becomes a universal defense method in the above mentioned situations.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">Both parties in a debt dispute (lender and debtor) require complex legal support aimed at protection of their legal rights and interests.</p>
+				<p class="service__txt">Taking into consideration the number of judicial settlements, frequent alterations to legislation and controversy of its separate provisions, obtaining a fair judicial decision may require substantial effort.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">In case a certain portion of indebtedness remains, which cannot be repaid during the period, set forth by legislation, it may be necessary to carry out a special liquidation procedure in relation to debtor for the purpose of settling the mentioned indebtedness. This procedure is known as bankruptcy.</p>
+				<p class="service__txt">On the other hand, in some cases it is not enough just to fix the renewal of violated rights. The necessity of enforcement of a judicial decision and control of the procedure of enforcement of such decision is not rare to arise.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">During the recovery of the debtor’s solvency or its declaration of bankruptcy both the insolvent party and its lenders need efficient legal assistance.</p>
-			</div>
-			<div class="textWrap">
-				<p class="service__txt">Based on our practical experience, we provide legal assistance and counseling on issues of debt recovery by means of judicial and non-judicial regulation, as well as legal support of a full range of debtor’s solvency recovery and bankrupt declaration procedures.</p>
+				<p class="service__txt">We provide comprehensive legal assistance in issues related to judicial disputes, representing our clients from the moment of filing an action with a competent court and until the moment of complete factual execution of judicial decision, paying great attention to research of legal authorities in relation to the substance of the dispute, as well as the procedural strategy and tactics of conducting the judicial proceeding and enforcement of judicial decisions.</p>
 			</div>
 		</div>
 	</section>
