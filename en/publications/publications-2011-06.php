@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item">
-				<a href="../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../publications/publications-2012-04.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -134,7 +102,7 @@
 						</a>
 						<ul class="publicationsList">
 							<li class="publicationsList__item">
-								<a href="publications-2012-04.html" class="publicationsList__link publicationsList__link_active">April</a>
+								<a href="publications-2012-04.html" class="publicationsList__link">April</a>
 							</li>
 							<li class="publicationsList__item">
 								<a href="publications-2012-06.html" class="publicationsList__link">June</a>
@@ -147,7 +115,7 @@
 						</a>
 						<ul class="publicationsList">
 							<li class="publicationsList__item">
-								<a href="publications-2011-06.html" class="publicationsList__link">June</a>
+								<a href="publications-2011-06.html" class="publicationsList__link publicationsList__link_active">June</a>
 							</li>
 							<li class="publicationsList__item">
 								<a href="publications-2011-09.html" class="publicationsList__link">September</a>
@@ -174,8 +142,8 @@
 	<section class="publications">
 		<div class="publicationsTxt">
 			<div class="publication">
-				<h3 class="publication__head">Personal Data Protection: Respect for Privacy or One More Ground for Runarounds?</h3>
-				<p class="publication__txt">The article deals with the problem of application of personal data protection legislation by Ukrainian authorities in processing citizens’ and attorneys’ inquiries. <a href="../../publications/publication-2012-04_01.html">Only Ukrainian version of the full text is available.</a></p>
+				<h3 class="publication__head">A Notarized Document from the USA: Sight Unseen or Can One See a Black Cat in a Dark Room?</h3>
+				<p class="publication__txt">The article deals with the issue of acceptance of the documents formalized by the US notaries in Ukraine. <a href="../../publications/publication-2011-06_01.html">Only Ukrainian version of the full text is available.</a></p>
 			</div>
 		</div>
 	</section>
