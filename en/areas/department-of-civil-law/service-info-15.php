@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/department-of-civil-law/service-info-17.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -132,13 +100,13 @@
 							<a href="service-info-14.html" class="serviceList__link">Collection of Compensation and Pension Payments</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-15.html" class="serviceList__link">Collection of Insurance and Social Payments</a>
+							<a href="service-info-15.html" class="serviceList__link serviceList__link_active">Collection of Insurance and Social Payments</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-16.html" class="serviceList__link">Legal Guardianship over Minor, Juvenile and Incapacitated Persons</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-17.html" class="serviceList__link serviceList__link_active">Labour Disputes</a>
+							<a href="service-info-17.html" class="serviceList__link">Labour Disputes</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-18.html" class="serviceList__link">Family Disputes</a>
@@ -223,7 +191,13 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap">
-				<p class="service__txt">Page is under construction.</p>
+				<ul class="serviceTxt__list">
+					<li class="serviceTxt__item">Damages</li>
+					<li class="serviceTxt__item">Pensions</li>
+					<li class="serviceTxt__item">Unemployment Benefits</li>
+					<li class="serviceTxt__item">Benefits Related to the Loss of the Family Breadwinner</li>
+					<li class="serviceTxt__item">Disability Benefits</li>
+				</ul>
 			</div>
 		</div>
 	</section>
