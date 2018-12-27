@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../../areas/probate-law-department/service-info-10.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -95,7 +63,7 @@
 					</a>
 					<ul class="serviceList">
 						<li class="serviceList__item">
-							<a href="service-info-5.html" class="serviceList__link">Legalization of rights of intestate and testate inheritance</a>
+							<a href="service-info-5.html" class="serviceList__link serviceList__link_active">Legalization of rights of intestate and testate inheritance</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-6.html" class="serviceList__link">Estate administration</a>
@@ -110,7 +78,7 @@
 							<a href="service-info-9.html" class="serviceList__link">Representation of Ukrainian heirs abroad</a>
 						</li>
 						<li class="serviceList__item">
-							<a href="service-info-10.html" class="serviceList__link serviceList__link_active">Recovery of Assets from banks and insurance companies</a>
+							<a href="service-info-10.html" class="serviceList__link">Recovery of Assets from banks and insurance companies</a>
 						</li>
 						<li class="serviceList__item">
 							<a href="service-info-11.html" class="serviceList__link">Transfer and payout of estate assets</a>
