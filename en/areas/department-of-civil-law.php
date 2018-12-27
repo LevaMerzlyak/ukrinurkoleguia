@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../areas/general-department.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -120,7 +88,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item">
+				<li class="mainMenu__item mainMenu__item_active">
 					<a href="department-of-civil-law.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">DEPARTMENT OF CIVIL LAW AND LEGAL SUPPORT TO CITIZENS</p>
 					</a>
@@ -201,7 +169,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item mainMenu__item_active">
+				<li class="mainMenu__item">
 					<a href="general-department.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">GENERAL DEPARTMENT</p>
 					</a>
@@ -223,13 +191,16 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap textWrap_txtSup">
-				<p class="service__txt service__txt_sup">The General department of Ukriniurkoleguia is an integral link in our system of providing legal support to citizens and legal entities, which ensures due and timely certification of documents issued in Ukraine for further use abroad, as well as foreign documents to be used in Ukraine, performs high-quality translation of documents.</p>
+				<p class="service__txt service__txt_sup">Ukriniurkoleguia’s important statutory mission is to protect the rights of Ukrainian individuals abroad and of foreigners in Ukraine. Activity of the Department of Civil Law and Legal Support to Citizens is aimed at the accomplishment of this mission.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">When necessary, the employees of the department carry out legal assessment of foreign documents (in particular, correctness of its formalization in order to be used in Ukraine), verify the document and provide the required explanations and consultations.</p>
+				<p class="service__txt">In the first place, the Department deals with the protection of Ukrainian citizens’ rights and legitimate interests in foreign jurisdictions. In this context, the Department’s important task is prevention of our compatriots’ discrimination in foreign countries by public authorities, as well as by particular private persons or legal entities.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">On behalf of our foreign partners and in case of applications of citizens residing abroad, the General department obtains documents from competent authorities of Ukraine and ensures their further certification for use abroad (legalization or apostilisation).</p>
+				<p class="service__txt">In its activity the Department of Civil Law and Legal Support to Citizens pays significant attention to the protection of the rights and interests of vulnerable categories of persons: children, elderly persons, persons with disabilities, representatives of national, ethnic, religious and linguistic minorities, etc.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">A particular place in the activity of the Department of Civil Law and Legal Support to Citizens belongs to the protection of the rights of Ukrainian migrant workers. This task is performed by the Department in close cooperation with the consular institutions of Ukraine under the Memorandum on Cooperation in Legal Protection of Ukrainian Citizens Abroad, signed with the Ministry of Foreign Affairs of Ukraine.</p>
 			</div>
 		</div>
 	</section>

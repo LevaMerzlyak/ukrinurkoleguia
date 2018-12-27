@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../areas/general-department.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -167,7 +135,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item">
+				<li class="mainMenu__item mainMenu__item_active">
 					<a href="business-law-department.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">BUSINESS LAW DEPARTMENT</p>
 					</a>
@@ -201,7 +169,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item mainMenu__item_active">
+				<li class="mainMenu__item">
 					<a href="general-department.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">GENERAL DEPARTMENT</p>
 					</a>
@@ -223,13 +191,37 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap textWrap_txtSup">
-				<p class="service__txt service__txt_sup">The General department of Ukriniurkoleguia is an integral link in our system of providing legal support to citizens and legal entities, which ensures due and timely certification of documents issued in Ukraine for further use abroad, as well as foreign documents to be used in Ukraine, performs high-quality translation of documents.</p>
+				<p class="service__txt service__txt_sup">The Business Law Department provides legal assistance in the wide range of issues which can arise in the course of commercial activity in Ukraine and abroad.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">When necessary, the employees of the department carry out legal assessment of foreign documents (in particular, correctness of its formalization in order to be used in Ukraine), verify the document and provide the required explanations and consultations.</p>
+				<p class="service__txt">The experts of Ukriniurkoleguia offer professional advice and comprehensive legal support in matters of economic, investment, corporate, tax, accounting, auditing, customs, administrative, land, competition, banking, immigration, intellectual property and other fields of law, provide debt collection services, represent clients in bodies of state and local government, including full support of dispute resolution in arbitrations and courts of all levels and jurisdictions, take part in negotiations with partners and contractors, prepare draft contracts and other documents, and perform expert examination of documents for their compliance with the legislation of Ukraine and the interests of the client, assist in resolving other legal issues arising from the company’s activity.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">On behalf of our foreign partners and in case of applications of citizens residing abroad, the General department obtains documents from competent authorities of Ukraine and ensures their further certification for use abroad (legalization or apostilisation).</p>
+				<p class="service__txt">Specialists of the Department assist their clients in launching business activity, perform comprehensive legal support of their daily activities, provide legal advice on Ukrainian, international and foreign business law, draft all types of commercial contracts, represent clients’ interests in relations with Ukrainian and foreign partners, state authorities, as well as before courts and arbitration institutions.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">One of the top priorities of Ukriniurkoleguia is to provide the full range of legal services in the fields of business and commercial law to foreign investors wishing to implement their business projects in Ukraine.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">The first issue arising before a foreign investor intending to start commercial activity in Ukraine is that of the possible forms of business organisation and the procedure of establishing a business in Ukraine. With regard to this issue, the professionals of Ukriniurkoleguia offer expert legal assistance in choosing the legal form of business entity and provide comprehensive turnkey solutions in state registration of business entities. In addition, Ukriniurkoleguia provides legal assistance on the registration, operation and termination of the branches of foreign companies in Ukraine.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">If it is necessary for a newly formed company to perform activities subject to licensing or requiring any special permission on the territory of Ukraine, Ukriniurkoleguia renders assistance in obtaining all kinds of licenses and permits.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">In pursuing commercial activities in Ukraine, a foreign investor may face the necessity to employ foreign experts and/or managers in such a company. Ukriniurkoleguia offers full scope of services related to obtaining work permits for foreign citizens to be employed by a Ukrainian company and to provide further legal stay of foreign citizens in Ukraine.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">Considering the needs of foreign investors for comprehensive legal support of their commercial activity in Ukraine, Ukriniurkoleguia renders full professional support for such activity from the establishment of the company until its termination – depending on the scope of an investor.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">The effectiveness of the commercial activities of a foreign company in Ukraine greatly depends on good choice of potential Ukrainian partners and contractors, as well as confidence in them throughout the span of business relations. The professionals of Ukriniurkoleguia can perform background checks on Ukrainian partners as to their financial condition, solvency and other criteria. Considering the client's requirements, our experts can analyse the implications of planned transactions and assess risks of certain business or other operations.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">The experts of Ukriniurkoleguia are ready to find comprehensive, professional and effective solutions for complex problems in the spheres of law, business and management.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">Ukriniurkoleguia’s staff is multilingual, which facilitates professional communication.</p>
 			</div>
 		</div>
 	</section>

@@ -19,41 +19,9 @@
 	<div class="loader">
 		<div class="loader__bg"></div>
 	</div>
-	<header class="header" id="mobMenu">
-		<div class="logo__wrap">
-			<a href="../index.html" class="logo logo_en">Ukriniurkoleguia</a>
-		</div>
-		<ul class="menu">
-			<li class="menu__item">
-				<a href="../index.html" class="menu__link">Home</a>
-			</li>
-			<li class="menu__item">
-				<a href="../about.html" class="menu__link">About us</a>
-			</li>
-			<li class="menu__item menu__item_active">
-				<a href="../areas.html" class="menu__link">Practise areas</a>
-			</li>
-			<li class="menu__item">
-				<a href="../publications.html" class="menu__link">Publications</a>
-			</li>
-			<li class="menu__item">
-				<a href="../contacts.html" class="menu__link">Contacts</a>
-			</li>
-		</ul>
-		<ul class="lang">
-			<li class="lang__item">
-				<a href="#" class="lang__link lang__link_active">En</a>
-			</li>
-			<li class="lang__item">
-				<a href="../../areas/general-department.html" class="lang__link">Ua</a>
-			</li>
-		</ul>
-		<div class="mobMenu">
-			<a href="#" class="btn btn_mobMenu">
-				<span class="btn__line"></span>
-			</a>
-		</div>
-	</header>
+	
+	<?php include_once "../php/includ/menu_top_en.php";?>
+	
 	<main class="main" id="bg1">
 		<div class="bg__part bg__part_main">
 			<div class="bg__inner"></div>
@@ -148,7 +116,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item">
+				<li class="mainMenu__item mainMenu__item_active">
 					<a href="family-law-department.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">FAMILY LAW DEPARTMENT</p>
 					</a>
@@ -201,7 +169,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="mainMenu__item mainMenu__item_active">
+				<li class="mainMenu__item">
 					<a href="general-department.html" class="mainMenu__link textWrap">
 						<p class="anim__txt">GENERAL DEPARTMENT</p>
 					</a>
@@ -223,13 +191,16 @@
 	<section class="service">
 		<div class="serviceTxt">
 			<div class="textWrap textWrap_txtSup">
-				<p class="service__txt service__txt_sup">The General department of Ukriniurkoleguia is an integral link in our system of providing legal support to citizens and legal entities, which ensures due and timely certification of documents issued in Ukraine for further use abroad, as well as foreign documents to be used in Ukraine, performs high-quality translation of documents.</p>
+				<p class="service__txt service__txt_sup">Ukriniurkoleguia provides legal assistance to foreign and Ukrainian nationals in family law matters involving a foreign element. Our Attorneys at law possess extensive experience in participation in court proceedings on dissolution of marriage, annulment of marriage, personal non-property rights and obligations of a married couple, property settlement, estimation of order of child upbringing, determination of domicile for children, termination of parental rights, exercise of child-support obligations, adoption, establishment and termination of custody and guardianship.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">When necessary, the employees of the department carry out legal assessment of foreign documents (in particular, correctness of its formalization in order to be used in Ukraine), verify the document and provide the required explanations and consultations.</p>
+				<p class="service__txt">Due to establishment of a wide cooperation network with foreign family law Attorneys Ukriniurkoleguia provides legal assistance to Ukrainian nationals in above-stated matters abroad.</p>
 			</div>
 			<div class="textWrap">
-				<p class="service__txt">On behalf of our foreign partners and in case of applications of citizens residing abroad, the General department obtains documents from competent authorities of Ukraine and ensures their further certification for use abroad (legalization or apostilisation).</p>
+				<p class="service__txt">The Attorneys of Ukriniurkoleguia promote and practice providing of legal assistance in family law matters by means of alternative dispute resolution methods, including mediation and mediation skills.</p>
+			</div>
+			<div class="textWrap">
+				<p class="service__txt">Legal support to surrogacy programs, a new sphere of family law, which is closely tied with the utilization of auxiliary reproductive technologies is a relatively new service offered by Ukriniurkoleguia. As Ukraine is one of a few countries where surrogacy is legal, the Ukrainian legislation creates an unparalleled opportunity for foreign nationals to exercise their right to fatherhood and motherhood using the surrogacy method.</p>
 			</div>
 		</div>
 	</section>
